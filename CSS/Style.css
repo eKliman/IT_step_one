@@ -1,0 +1,90 @@
+@import "reset.css";
+
+h2{
+    color: red;
+}
+
+div h1{
+    color: blue;
+}
+
+p{
+    color: forestgreen;
+}
+
+.cvet{
+    color: purple;
+}
+
+.razmer{
+    font-size: 100px;
+}
+
+/*Style assignment by id*/
+#name{
+    font-size: 40px;
+}
+
+h3,h4{
+    color: rgb(190, 113, 113);
+}
+
+input[type="text"]{
+    border-color: green;
+    /*border: 1px solid green;*/
+}
+
+input[type="email"]{
+    border-color: red;
+}
+
+a[target]{
+    font-size: 20px;
+}
+
+a[target="_blank"]{
+    color: green;
+}
+
+a[target="_self"]{
+    color: hotpink;
+}
+
+a{
+    color: orange;
+}
+
+/* -------- Mouse hover ---------*/
+a:hover{
+    color: brown;
+}
+
+input:hover{
+    border: 4px solid brown;
+    border-radius: 10px;
+    background-color: pink;
+}
+
+.link:active{
+    font-weight: 900;
+}
+
+.link:before{
+    content: "+";
+    display: inline-block;
+    font-weight: bold;
+    color: green;
+    padding-right:10px;
+}
+
+.link:after{
+    content: "+";
+    display: inline-block;
+    font-weight: bold; 
+    color: green;
+    padding-left:10px;
+}
+
+ul li:nth-child(2){
+    color: rgb(247, 12, 12);
+}
