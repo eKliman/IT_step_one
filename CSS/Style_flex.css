@@ -1,0 +1,24 @@
+@import"reser.css";
+
+.flex{
+    height: 500px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.item{
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    /*width: 100px;*/
+    flex-grow: 1;
+}
+
+.item:nth-child(2){
+    /*align-self: flex-end;*/
+    background-color: burlywood;
+    order: -1;
+    flex-grow: 2;
+}

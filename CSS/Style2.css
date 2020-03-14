@@ -1,0 +1,87 @@
+@import"reset.css";
+
+.block{
+    background: orchid;
+    border: 3px solid #000000;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 100px;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    line-height: 200px;
+    border-radius: 100%;
+}
+
+.text-align{
+    text-align: center;
+}
+
+.block2{
+    background: forestgreen;
+    border: 3px solid #000000;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.flex{
+    height: 500px;
+    border: 3px solid #79f308;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block3{
+    background: blue;
+    border: 3px solid #79f308;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 100%;
+}
+
+.position{
+    height: 500px;
+    border: 3px solid #000000;
+    position: relative;
+}
+
+.block4{
+    background: rgb(235, 163, 10);
+    border: 3px solid #be0000;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.block5{
+    background: rgb(235, 163, 10);
+    border: 3px solid #be0000;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    right: 100px;
+    top: 10%;
+}
