@@ -1,0 +1,154 @@
+@import"reset.css";
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+.wrapper{
+    max-width: 1140px;
+    width: calc(100%-40px);
+    margin: 0 auto; /*top and bottom indent 0px, side indent - auto center*/
+}
+.top_line{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px; /*Sets the minimum hetght. If the content increases, the height will also increase*/
+}
+header{
+    background-color: #87509c;
+}
+.header_nav{
+    font-size:16px;
+    line-height:18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.header_nav a{ /*working with links in header_nav*/
+    text-decoration:none;
+    color: inherit;
+}
+.header_nav ul{
+    display: flex;
+}
+.header_nav ul li{
+    padding-left: 10px;
+    padding-right: 15px;
+    height: 30px;
+    line-height: 30px; /*allows you to center the text in height*/
+    transition: background 300ms ease-in-out; /*adds smoothness*/
+    margin: 0 1px; /*adds top/bottom indent 0px, side indent 1px*/
+}
+.header_nav ul li.active{
+    background:#643a79;
+    border-radius: 3px;
+}
+.header_nav ul li:hover{
+    background:#643a79;
+    border-radius: 3px;
+    transition: background 300ms ease-in-out; /*adds smoothness*/
+}
+.bottom_line{
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 145px;
+}
+.bottom_line p{
+    font-size:42px;
+    line-height: 48px;
+    color: #f7f3ea;
+    font-weight:700;
+    margin-bottom: 50px;
+}
+.button{
+    display: inline-block;
+    padding-left: 80px;
+    padding-right: 80px;
+    background: #eb7d4b;
+    height: 65px;
+    line-height: 65px;
+    font-size: 18px;
+    letter-spacing: 0.02em; /*in Photoshop it's the text parameter VA 20*/
+    border-radius: 3px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 4px solid #c86a40; /*shade under button*/
+    transition: background 300ms ease-in-out; /*adds smoothness*/
+}
+.button:hover{
+    background: #c86a40;
+    transition: background 300ms ease-in-out; /*adds smoothness*/
+}
+.button:active{
+    background: #a3481d;
+    color: rgb(148, 145, 141);
+    transition: background 300ms ease-in-out; /*adds smoothness*/
+}
+
+section.services{
+    background: #17c2a4;
+    padding: 120px 0;
+    text-align: center;
+}
+section.services h2{
+    font-size: 40px;
+    line-height: 1; /*conforms to font-size*/
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
+}
+section.services h2:after{ /*creates line between h2 and p*/
+    content: "";
+    display: block;
+    width: 86px;
+    height: 4px;
+    background: rgba(0,0,0,0.15);
+    position: absolute;
+    left: calc(50% - 43px);
+    /*margin-left: -43px;*/
+    bottom: 0;
+}
+section.services .description{
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+section.services .services_list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+section.services .services_list .service_item{
+    width: calc(25% - 15px)
+}
+section.services .services_list .service_item .img{
+    height: 150px; /*the biggest icon + 3px*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+section.services .services_list .service_item .item_title{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+section.services .services_list .service_item .item_description{
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    padding: 0 30px;
+    /*box-sizing: border-box;*/
+}
