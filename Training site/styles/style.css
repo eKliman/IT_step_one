@@ -1,37 +1,37 @@
 @import"reset.css";
 
-body{
+body {
     font-family: 'Titillium Web', sans-serif;
 }
-.wrapper{
+.wrapper {
     max-width: 1140px;
     width: calc(100%-40px);
     margin: 0 auto; /*top and bottom indent 0px, side indent - auto center*/
 }
-.top_line{
+.top_line {
     display:flex;
     align-items: center;
     justify-content: space-between;
     min-height: 150px; /*Sets the minimum hetght. If the content increases, the height will also increase*/
 }
-header{
+header {
     background-color: #87509c;
 }
-.header_nav{
+.header_nav {
     font-size:16px;
     line-height:18px;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 400;
 }
-.header_nav a{ /*working with links in header_nav*/
+.header_nav a { /*working with links in header_nav*/
     text-decoration:none;
     color: inherit;
 }
-.header_nav ul{
+.header_nav ul {
     display: flex;
 }
-.header_nav ul li{
+.header_nav ul li {
     padding-left: 10px;
     padding-right: 15px;
     height: 30px;
@@ -39,28 +39,28 @@ header{
     transition: background 300ms ease-in-out; /*adds smoothness*/
     margin: 0 1px; /*adds top/bottom indent 0px, side indent 1px*/
 }
-.header_nav ul li.active{
+.header_nav ul li.active {
     background:#643a79;
     border-radius: 3px;
 }
-.header_nav ul li:hover{
+.header_nav ul li:hover {
     background:#643a79;
     border-radius: 3px;
     transition: background 300ms ease-in-out; /*adds smoothness*/
 }
-.bottom_line{
+.bottom_line {
     text-align: center;
     padding-top: 85px;
     padding-bottom: 145px;
 }
-.bottom_line p{
+.bottom_line p {
     font-size:42px;
     line-height: 48px;
     color: #f7f3ea;
     font-weight:700;
     margin-bottom: 50px;
 }
-.button{
+.button {
     display: inline-block;
     padding-left: 80px;
     padding-right: 80px;
@@ -76,22 +76,22 @@ header{
     border-bottom: 4px solid #c86a40; /*shade under button*/
     transition: background 300ms ease-in-out; /*adds smoothness*/
 }
-.button:hover{
+.button:hover {
     background: #c86a40;
     transition: background 300ms ease-in-out; /*adds smoothness*/
 }
-.button:active{
+.button:active {
     background: #a3481d;
     color: rgb(148, 145, 141);
     transition: background 300ms ease-in-out; /*adds smoothness*/
 }
 
-section.services{
+section.services {
     background: #17c2a4;
     padding: 120px 0;
     text-align: center;
 }
-section.services h2{
+section.services h2 {
     font-size: 40px;
     line-height: 1; /*conforms to font-size*/
     color: #ffffff;
@@ -101,7 +101,7 @@ section.services h2{
     padding-bottom: 25px;
     position: relative;
 }
-section.services h2:after{ /*creates line between h2 and p*/
+section.services h2:after { /*creates line between h2 and p*/
     content: "";
     display: block;
     width: 86px;
@@ -112,7 +112,7 @@ section.services h2:after{ /*creates line between h2 and p*/
     /*margin-left: -43px;*/
     bottom: 0;
 }
-section.services .description{
+section.services .description {
     font-size: 18px;
     line-height: 26px;
     color: #ffffff;
@@ -120,22 +120,22 @@ section.services .description{
     font-weight: 400;
     margin-bottom: 70px;
 }
-section.services .services_list{
+section.services .services_list {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-section.services .services_list .service_item{
+section.services .services_list .service_item {
     width: calc(25% - 15px)
 }
-section.services .services_list .service_item .img{
+section.services .services_list .service_item .img {
     height: 150px; /*the biggest icon + 3px*/
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
 }
-section.services .services_list .service_item .item_title{
+section.services .services_list .service_item .item_title {
     color: #ffffff;
     font-size: 24px;
     font-weight: 700;
@@ -143,7 +143,7 @@ section.services .services_list .service_item .item_title{
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-section.services .services_list .service_item .item_description{
+section.services .services_list .service_item .item_description {
     color: #fff;
     font-size: 16px;
     line-height: 24px;
@@ -151,4 +151,138 @@ section.services .services_list .service_item .item_description{
     letter-spacing: 0.02em;
     padding: 0 30px;
     /*box-sizing: border-box;*/
+}
+
+section.contact {
+    background: #3c5499;
+    padding: 120px 0;
+    text-align: center;
+}
+section.contact h2 {
+    font-size: 40px;
+    line-height: 1; /*conforms to font-size*/
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
+}
+section.contact h2:after { /*creates line between h2 and p*/
+    content: "";
+    display: block;
+    width: 86px;
+    height: 4px;
+    background: rgba(0,0,0,0.15);
+    position: absolute;
+    left: calc(50% - 43px);
+    /*margin-left: -43px;*/
+    bottom: 0;
+}
+section.contact .description {
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+section.contact .contact_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 856px;
+    margin:0 auto;
+}
+section.contact .contact_form input[type="text"],section.contact .contact_form input[type="email"] {
+    width: calc(50% - 16px);
+    margin-bottom: 25px;
+    background: #273a71;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding-left: 23px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 18px;
+    box-sizing: border-box; /*so that padding does not affect the size of flex*/
+}
+/* --- The following four objects are needed to design the placeholders---*/
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+    font-size: 18px;
+}
+input::-moz-placeholder,textarea::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+    font-size: 18px;
+}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+    font-size: 18px;
+}
+input:-moz-placeholder,textarea:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+    font-size: 18px;
+}
+/*------------------------------------------------------------*/
+section.contact .contact_form textarea {
+    width: 100%;
+    margin-bottom: 60px;
+    background: #273a71;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding-left: 23px;
+    height: 200px;
+    line-height: 56px;
+    font-size: 18px;
+    box-sizing: border-box; /*so that padding does not affect the size of flex*/
+}
+section.contact .contact_form .submit {
+    width: 100%;
+    text-align: center;
+    
+}
+section.contact .contact_form input[type="submit"] {
+    border: none;
+    display: inline-block;
+    padding-left: 80px;
+    padding-right: 80px;
+    background: #30bae7;
+    height: 65px;
+    line-height: 65px;
+    font-size: 18px;
+    letter-spacing: 0.02em; /*in Photoshop it's the text parameter VA 20*/
+    border-radius: 3px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 4px solid #299ec5; /*shade under button*/
+    transition: background 300ms ease-in-out; /*adds smoothness*/
+}
+section.contact .contact_form input[type="submit"]:hover {
+    transition: background 300ms ease-in-out; /*adds smoothness*/
+    background: #299ec5;
+}
+.footer {
+    background: #344b8e;
+}
+.footer_social {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    color: #fff;
+}
+.footer_social ul {
+    min-height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_social a {
+    text-decoration: none;
+    color: inherit;
+}
+.footer_social a:hover {
+    color: #30bae7;
 }
